@@ -7,12 +7,7 @@ from file_sorter import Sorter
 class Organizer:
     @staticmethod
     def start_organize():
-        """
-            A method that creates or reads folders in a target directory. It also includes method from 
-            another module that sorts out files and moves them from a different folder depending
-            on their extension type.
-        """
-        with open('C:/Users/63928/Desktop/File Sorter/config.json', 'r') as config_file:
+        with open('path/to/File Sorter/config.json', 'r') as config_file:
             config = json.load(config_file)
             target = config["target-dir"]
             os.chdir(target)
