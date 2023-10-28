@@ -7,7 +7,7 @@ class Sorter:
     @staticmethod
     def start_sort():
         try:
-            with open('C:/Users/63928/Desktop/File Sorter/config.json', 'r') as config_file:
+            with open('path/to/File Sorter/config.json', 'r') as config_file:
                 config = json.load(config_file)
 
                 source = config.get("source-dir")
