@@ -3,6 +3,7 @@ import json
 from pathlib import Path
 from file_sorter import Sorter
 
+
 class Organizer:
     @staticmethod
     def start_organize():
