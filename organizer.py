@@ -3,11 +3,12 @@ import json
 from pathlib import Path
 from file_sorter import Sorter
 
+
 class Organizer:
     @staticmethod
     def start_organize():
         try:
-            with open('path/to/File Sorter/config.json', 'r') as config_file:
+            with open('C:/Users/63928/Desktop/File Sorter/config.json', 'r') as config_file:
                 config = json.load(config_file)
                 target = config["target-dir"]
                 os.chdir(target)
